@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Price Tracker Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧮 Retail Price Tracker</h1>
+            <p>Compare and track supplier prices for smarter purchases.</p>
+        </header>
+        <main>
+            <section class="form-section">
+                <form id="priceForm">
+                    <input type="text" id="supplier" placeholder="Supplier Name" required>
+                    <input type="text" id="item" placeholder="Item Name" required>
+                    <input type="number" id="price" placeholder="Price" min="0" step="0.01" required>
+                    <button type="submit">Add/Update</button>
+                </form>
+            </section>
+            <section class="table-section">
+                <table id="priceTable">
+                    <thead>
+                        <tr>
+                            <th>Supplier</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Last Updated</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows go here -->
+                    </tbody>
+                </table>
+            </section>
+            <section class="chart-section">
+                <canvas id="priceChart"></canvas>
+            </section>
+        </main>
+        <audio id="successSound" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae0b7.mp3" preload="auto"></audio>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
