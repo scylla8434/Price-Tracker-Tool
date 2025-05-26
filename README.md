@@ -1,6 +1,6 @@
 # 🧮 Retail Shopkeepers: Price Tracker Tool
 
-[🔗 **Live Demo**](https://your-live-demo-link.com)
+[🔗 **Live Demo**](https://price-tracker-tool.netlify.app/)
 
 ## Problem
 Shopkeepers in informal markets struggle with rapidly changing supplier prices. This tool helps them compare and track supplier prices to make smarter purchases.
